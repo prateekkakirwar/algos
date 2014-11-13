@@ -6,9 +6,24 @@ import java.util.Date;
 public class Testing
 {
 	public static void main(String[] args) {
-		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-		String date = sdf.format(new Date(1220227200)); 
-		System.out.println(date);
+		Long L = new Long(10L);
+		L = null;
+		long l = 10;
 		
+		//l = setLong(L);
+		
+		//System.out.println("long value is " + l);
+		hello(L);
+	}
+	
+	public static void hello(long l)
+	{
+		
+		System.out.println("Hello");
+	}
+	
+	public static long setLong(Long L)
+	{
+		return L;
 	}
 }
